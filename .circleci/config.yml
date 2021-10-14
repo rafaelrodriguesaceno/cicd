@@ -2,7 +2,7 @@
 jobs:
   build:
     docker:
-      - image: 'node:latest'
+      - image: circleci/python:stretch
     steps:
       - checkout
       - sonarcloud/scan
